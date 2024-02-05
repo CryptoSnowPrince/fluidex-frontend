@@ -143,10 +143,10 @@ export const bscTokens = {
   ),
   usdt: new Token(
     ChainId.BSC,
-    '0x837C62fBB76F7a72AbA4a68981930189b2D651d4',
+    '0x6572bee203c2906175D5AcDbd11917E06Cc1D545',
     18,
     'USDT',
-    'Tether USDT',
+    'Tether USD',
     'https://tether.to/',
   ),
   btcb: new Token(
