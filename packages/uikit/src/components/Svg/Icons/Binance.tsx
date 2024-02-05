@@ -11,7 +11,7 @@ const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
     //     fill="white"
     //   />
     // </Svg>
-    <img src="https://fluidex.metabest.tech/logo.png" height="24px" width="24px" alt="logo" />
+    <img src="https://fluidex.metabest.tech/sei.png" height="24px" width="24px" alt="logo" />
   );
 };
 
