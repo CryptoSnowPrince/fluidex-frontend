@@ -1,7 +1,7 @@
 [
   {
     "inputs": [],
-    "name": "WETH",
+    "name": "WSEI",
     "outputs": [
       {
         "internalType": "address",
@@ -109,7 +109,7 @@
         "type": "uint256"
       }
     ],
-    "name": "addLiquidityETH",
+    "name": "addLiquiditySEI",
     "outputs": [
       {
         "internalType": "uint256",
@@ -365,7 +365,7 @@
         "type": "uint256"
       }
     ],
-    "name": "removeLiquidityETH",
+    "name": "removeLiquiditySEI",
     "outputs": [
       {
         "internalType": "uint256",
@@ -414,7 +414,7 @@
         "type": "uint256"
       }
     ],
-    "name": "removeLiquidityETHSupportingFeeOnTransferTokens",
+    "name": "removeLiquiditySEISupportingFeeOnTransferTokens",
     "outputs": [
       {
         "internalType": "uint256",
@@ -478,7 +478,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "removeLiquidityETHWithPermit",
+    "name": "removeLiquiditySEIWithPermit",
     "outputs": [
       {
         "internalType": "uint256",
@@ -547,7 +547,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
+    "name": "removeLiquiditySEIWithPermitSupportingFeeOnTransferTokens",
     "outputs": [
       {
         "internalType": "uint256",
@@ -655,7 +655,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapETHForExactTokens",
+    "name": "swapSEIForExactTokens",
     "outputs": [
       {
         "internalType": "uint256[]",
@@ -689,7 +689,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapExactETHForTokens",
+    "name": "swapExactSEIForTokens",
     "outputs": [
       {
         "internalType": "uint256[]",
@@ -723,7 +723,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapExactETHForTokensSupportingFeeOnTransferTokens",
+    "name": "swapExactSEIForTokensSupportingFeeOnTransferTokens",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -756,7 +756,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapExactTokensForETH",
+    "name": "swapExactTokensForSEI",
     "outputs": [
       {
         "internalType": "uint256[]",
@@ -795,7 +795,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapExactTokensForETHSupportingFeeOnTransferTokens",
+    "name": "swapExactTokensForSEISupportingFeeOnTransferTokens",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -900,7 +900,7 @@
         "type": "uint256"
       }
     ],
-    "name": "swapTokensForExactETH",
+    "name": "swapTokensForExactSEI",
     "outputs": [
       {
         "internalType": "uint256[]",

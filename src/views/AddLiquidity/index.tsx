@@ -197,8 +197,8 @@ export default function AddLiquidity() {
     let value: BigNumber | null
     if (currencyA === ETHER || currencyB === ETHER) {
       const tokenBIsBNB = currencyB === ETHER
-      estimate = routerContract.estimateGas.addLiquidityETH
-      method = routerContract.addLiquidityETH
+      estimate = routerContract.estimateGas.addLiquiditySEI
+      method = routerContract.addLiquiditySEI
       args = [
         wrappedCurrency(tokenBIsBNB ? currencyA : currencyB, chainId)?.address ?? '', // token
         (tokenBIsBNB ? parsedAmountA : parsedAmountB).raw.toString(), // token desired
