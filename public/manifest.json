@@ -1,8 +1,8 @@
 {
-  "short_name": "Sherpaswap",
-  "name": "Sherpaswap",
-  "description": "Sherpaswap LP Tokens",
-  "homepage_url": "https://sherpaswap.finance",
+  "short_name": "Fluidex",
+  "name": "Fluidex",
+  "description": "Fluidex LP Tokens",
+  "homepage_url": "https://fluidex.finance",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

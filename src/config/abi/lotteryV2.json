@@ -744,7 +744,7 @@
       {
         "components": [
           {
-            "internalType": "enum SherpaswapLottery.Status",
+            "internalType": "enum FluidexLottery.Status",
             "name": "status",
             "type": "uint8"
           },
@@ -809,7 +809,7 @@
             "type": "uint32"
           }
         ],
-        "internalType": "struct SherpaswapLottery.Lottery",
+        "internalType": "struct FluidexLottery.Lottery",
         "name": "",
         "type": "tuple"
       }

@@ -538,7 +538,7 @@
     "name": "pancakeSwapLottery",
     "outputs": [
       {
-        "internalType": "contract ISherpaswapLottery",
+        "internalType": "contract IFluidexLottery",
         "name": "",
         "type": "address"
       }
