@@ -60,7 +60,7 @@ export const usePollFarmsV1WithUserData = () => {
 
 /**
  * Fetches the "core" farm data used globally
- * 251 = YAK-SEI LP
+ * 251 = FLUIDEX-SEI LP
  * 252 = BUSD-SEI LP
  */
 export const usePollCoreFarmData = () => {

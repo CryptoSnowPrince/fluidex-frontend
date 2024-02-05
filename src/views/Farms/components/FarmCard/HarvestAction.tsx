@@ -49,7 +49,7 @@ const HarvestAction: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = (
             toastSuccess(
               `${t('Harvested')}!`,
               <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-                {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'YAK' })}
+                {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'FLUIDEX' })}
               </ToastDescriptionWithTx>,
             )
             dispatch(fetchFarmUserDataAsync({ account, pids: [pid] }))

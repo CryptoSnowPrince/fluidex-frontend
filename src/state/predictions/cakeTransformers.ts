@@ -1,7 +1,7 @@
 import { Bet, BetPosition, Round, PredictionUser } from 'state/types'
 import numberOrNull from 'utils/numberOrNull'
 
-import { RoundResponseYAK } from './cakeQueries'
+import { RoundResponseFLUIDEX } from './cakeQueries'
 
 const getRoundPosition = (positionResponse: string) => {
   if (positionResponse === 'Bull') {
@@ -19,7 +19,7 @@ const getRoundPosition = (positionResponse: string) => {
   return null
 }
 
-export const transformBetResponseYAK = (betResponse): Bet => {
+export const transformBetResponseFLUIDEX = (betResponse): Bet => {
   const bet = {
     id: betResponse.id,
     hash: betResponse.hash,
@@ -30,24 +30,24 @@ export const transformBetResponseYAK = (betResponse): Bet => {
     claimedAt: numberOrNull(betResponse.claimedAt),
     claimedBlock: numberOrNull(betResponse.claimedBlock),
     claimedHash: betResponse.claimedHash,
-    claimedBNB: betResponse.claimedYAK ? parseFloat(betResponse.claimedYAK) : 0,
-    claimedNetBNB: betResponse.claimedNetYAK ? parseFloat(betResponse.claimedNetYAK) : 0,
+    claimedBNB: betResponse.claimedFLUIDEX ? parseFloat(betResponse.claimedFLUIDEX) : 0,
+    claimedNetBNB: betResponse.claimedNetFLUIDEX ? parseFloat(betResponse.claimedNetFLUIDEX) : 0,
     createdAt: numberOrNull(betResponse.createdAt),
     updatedAt: numberOrNull(betResponse.updatedAt),
   } as Bet
 
   if (betResponse.user) {
-    bet.user = transformUserResponseYAK(betResponse.user)
+    bet.user = transformUserResponseFLUIDEX(betResponse.user)
   }
 
   if (betResponse.round) {
-    bet.round = transformRoundResponseYAK(betResponse.round)
+    bet.round = transformRoundResponseFLUIDEX(betResponse.round)
   }
 
   return bet
 }
 
-export const transformUserResponseYAK = (userResponse): PredictionUser => {
+export const transformUserResponseFLUIDEX = (userResponse): PredictionUser => {
   const {
     id,
     createdAt,
@@ -56,14 +56,14 @@ export const transformUserResponseYAK = (userResponse): PredictionUser => {
     totalBets,
     totalBetsBull,
     totalBetsBear,
-    totalYAK,
-    totalYAKBull,
-    totalYAKBear,
+    totalFLUIDEX,
+    totalFLUIDEXBull,
+    totalFLUIDEXBear,
     totalBetsClaimed,
-    totalYAKClaimed,
+    totalFLUIDEXClaimed,
     winRate,
-    averageYAK,
-    netYAK,
+    averageFLUIDEX,
+    netFLUIDEX,
   } = userResponse || {}
 
   return {
@@ -74,18 +74,18 @@ export const transformUserResponseYAK = (userResponse): PredictionUser => {
     totalBets: numberOrNull(totalBets),
     totalBetsBull: numberOrNull(totalBetsBull),
     totalBetsBear: numberOrNull(totalBetsBear),
-    totalBNB: totalYAK ? parseFloat(totalYAK) : 0,
-    totalBNBBull: totalYAKBull ? parseFloat(totalYAKBull) : 0,
-    totalBNBBear: totalYAKBear ? parseFloat(totalYAKBear) : 0,
+    totalBNB: totalFLUIDEX ? parseFloat(totalFLUIDEX) : 0,
+    totalBNBBull: totalFLUIDEXBull ? parseFloat(totalFLUIDEXBull) : 0,
+    totalBNBBear: totalFLUIDEXBear ? parseFloat(totalFLUIDEXBear) : 0,
     totalBetsClaimed: numberOrNull(totalBetsClaimed),
-    totalBNBClaimed: totalYAKClaimed ? parseFloat(totalYAKClaimed) : 0,
+    totalBNBClaimed: totalFLUIDEXClaimed ? parseFloat(totalFLUIDEXClaimed) : 0,
     winRate: winRate ? parseFloat(winRate) : 0,
-    averageBNB: averageYAK ? parseFloat(averageYAK) : 0,
-    netBNB: netYAK ? parseFloat(netYAK) : 0,
+    averageBNB: averageFLUIDEX ? parseFloat(averageFLUIDEX) : 0,
+    netBNB: netFLUIDEX ? parseFloat(netFLUIDEX) : 0,
   }
 }
 
-export const transformRoundResponseYAK = (roundResponse: RoundResponseYAK): Round => {
+export const transformRoundResponseFLUIDEX = (roundResponse: RoundResponseFLUIDEX): Round => {
   const {
     id,
     epoch,
@@ -137,6 +137,6 @@ export const transformRoundResponseYAK = (roundResponse: RoundResponseYAK): Roun
     bullAmount: bullAmount ? parseFloat(bullAmount) : 0,
     bearBets: numberOrNull(bearBets),
     bearAmount: bearAmount ? parseFloat(bearAmount) : 0,
-    bets: bets.map(transformBetResponseYAK),
+    bets: bets.map(transformBetResponseFLUIDEX),
   }
 }

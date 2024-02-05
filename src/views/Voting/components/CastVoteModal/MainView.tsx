@@ -89,7 +89,7 @@ const MainView: React.FC<React.PropsWithChildren<MainViewProps>> = ({
                     <Flex>
                       <RocketIcon color={isBoostingExpired ? 'warning' : 'secondary'} width="15px" height="15px" />
                       <Text ml="4px" bold color={isBoostingExpired ? 'warning' : 'secondary'} fontSize="14px">
-                        {isBoostingExpired ? t('Boosting Expired') : t('Boosted by vYAK')}
+                        {isBoostingExpired ? t('Boosting Expired') : t('Boosted by vFLUIDEX')}
                       </Text>
                     </Flex>
                   )}
@@ -103,7 +103,7 @@ const MainView: React.FC<React.PropsWithChildren<MainViewProps>> = ({
               <Message variant="danger" mb="12px">
                 <Text color="danger">
                   {t(
-                    'Hold some YAK in your wallet or on Sherpaswap at the snapshot block to get voting power for future proposals.',
+                    'Hold some FLUIDEX in your wallet or on Fluidex at the snapshot block to get voting power for future proposals.',
                   )}
                 </Text>
               </Message>

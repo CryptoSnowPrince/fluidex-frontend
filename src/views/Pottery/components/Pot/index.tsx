@@ -103,7 +103,7 @@ const Pot: React.FC<React.PropsWithChildren> = () => {
               <Box>
                 <CardHeader
                   title="Pottery"
-                  subTitle="Stake YAK, Earn YAK, Win YAK"
+                  subTitle="Stake FLUIDEX, Earn FLUIDEX, Win FLUIDEX"
                   primarySrc="/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg"
                   secondarySrc="/images/tokens/pot-icon.svg"
                 />

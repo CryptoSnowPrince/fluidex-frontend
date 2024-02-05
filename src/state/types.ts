@@ -326,7 +326,7 @@ export enum PredictionStatus {
 
 export enum PredictionSupportedSymbol {
   SEI = 'SEI',
-  YAK = 'YAK',
+  FLUIDEX = 'FLUIDEX',
 }
 
 export enum PredictionsChartView {

@@ -1,28 +1,28 @@
 import { UserResponse, BetResponse, HistoricalBetResponse, RoundResponse } from './responseType'
 
-export interface UserResponseYAK extends UserResponse<BetResponseYAK> {
-  totalYAK: string
-  totalYAKBull: string
-  totalYAKBear: string
-  averageYAK: string
-  totalYAKClaimed: string
-  netYAK: string
+export interface UserResponseFLUIDEX extends UserResponse<BetResponseFLUIDEX> {
+  totalFLUIDEX: string
+  totalFLUIDEXBull: string
+  totalFLUIDEXBear: string
+  averageFLUIDEX: string
+  totalFLUIDEXClaimed: string
+  netFLUIDEX: string
 }
 
-export interface BetResponseYAK extends BetResponse {
-  claimedYAK: string
-  claimedNetYAK: string
-  user?: UserResponseYAK
-  round?: RoundResponseYAK
+export interface BetResponseFLUIDEX extends BetResponse {
+  claimedFLUIDEX: string
+  claimedNetFLUIDEX: string
+  user?: UserResponseFLUIDEX
+  round?: RoundResponseFLUIDEX
 }
 
-export type HistoricalBetResponseYAK = HistoricalBetResponse<UserResponseYAK>
+export type HistoricalBetResponseFLUIDEX = HistoricalBetResponse<UserResponseFLUIDEX>
 
-export type RoundResponseYAK = RoundResponse<BetResponseYAK>
+export type RoundResponseFLUIDEX = RoundResponse<BetResponseFLUIDEX>
 
-export interface TotalWonMarketResponseYAK {
-  totalYAK: string
-  totalYAKTreasury: string
+export interface TotalWonMarketResponseFLUIDEX {
+  totalFLUIDEX: string
+  totalFLUIDEXTreasury: string
 }
 
 /**
@@ -63,8 +63,8 @@ export const betBaseFields = `
  claimedAt
  claimedHash
  claimedBlock
- claimedYAK
- claimedNetYAK
+ claimedFLUIDEX
+ claimedNetFLUIDEX
  createdAt
  updatedAt
 `
@@ -77,12 +77,12 @@ export const userBaseFields = `
   totalBets
   totalBetsBull
   totalBetsBear
-  totalYAK
-  totalYAKBull
-  totalYAKBear
+  totalFLUIDEX
+  totalFLUIDEXBull
+  totalFLUIDEXBear
   totalBetsClaimed
-  totalYAKClaimed
+  totalFLUIDEXClaimed
   winRate
-  averageYAK
-  netYAK
+  averageFLUIDEX
+  netFLUIDEX
 `

@@ -49,7 +49,7 @@ const HarvestAction: React.FunctionComponent<React.PropsWithChildren<HarvestActi
     <ActionContainer>
       <ActionTitles>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          YAK
+          FLUIDEX
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
           {t('Earned')}
@@ -72,7 +72,7 @@ const HarvestAction: React.FunctionComponent<React.PropsWithChildren<HarvestActi
               toastSuccess(
                 `${t('Harvested')}!`,
                 <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-                  {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'YAK' })}
+                  {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'FLUIDEX' })}
                 </ToastDescriptionWithTx>,
               )
               dispatch(fetchFarmUserDataAsync({ account, pids: [pid] }))

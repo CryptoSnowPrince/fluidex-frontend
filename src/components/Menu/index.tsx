@@ -60,7 +60,7 @@ const Menu = (props) => {
       footerLinks={getFooterLinks}
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
-      buyCakeLabel={t('Buy YAK')}
+      buyCakeLabel={t('Buy FLUIDEX')}
       {...props}
     />
   )

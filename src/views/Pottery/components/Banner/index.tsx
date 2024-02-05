@@ -105,7 +105,7 @@ const Banner: React.FC<React.PropsWithChildren<BannerProps>> = ({ handleScroll }
               bold
               defaultType
             >
-              {t('The Sherpaswap')}
+              {t('The Fluidex')}
             </OutlineText>
             <OutlineText fontSize={['24px', '24px', '24px', '24px', '32px']} bold ml="4px">
               {t('Pottery')}
@@ -118,7 +118,7 @@ const Banner: React.FC<React.PropsWithChildren<BannerProps>> = ({ handleScroll }
           <StakeToWinButton handleScroll={handleScroll} />
           <Box style={{ marginTop: '30px' }}>
             <Text color="white" bold as="span">
-              {t('Deposit YAK for')}
+              {t('Deposit FLUIDEX for')}
             </Text>
             <DarkTextStyle ml="3px" bold as="span">
               {t('10 Weeks to earn')}

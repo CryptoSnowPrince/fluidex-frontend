@@ -3,11 +3,11 @@
  */
 const tokens = {
   cake: {
-    symbol: "YAK",
+    symbol: "FLUIDEX",
     address: {
       56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
-      713715: "0x1FC855B99e97FE958c40dbF9876961Eb80F78091",
+      713715: "0x67056f04e0B41C8350dbBb848A4909E2aF49D2f0",
     },
     decimals: 18,
     projectLink: "https://seitrace.com/",
@@ -436,10 +436,10 @@ const tokens = {
     projectLink: "https://venus.io/",
   },
   wbnb: {
-    symbol: "wSEI",
+    symbol: "WSEI",
     address: {
-      713715: "0x399FA293e0CD85f4B87809698C921829E730a687",
-      56: "0x399FA293e0CD85f4B87809698C921829E730a687",
+      713715: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      56: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       97: "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
     },
     decimals: 18,
@@ -747,6 +747,7 @@ const tokens = {
     address: {
       56: "0x55d398326f99059fF775485246999027B3197955",
       97: "0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5",
+      713715: "0x837C62fBB76F7a72AbA4a68981930189b2D651d4",
     },
     decimals: 18,
     projectLink: "https://tether.to/",

@@ -41,7 +41,7 @@ const config = {
   images: {
     // domains: ['static-nft.pancakeswap.com'],
     loader: 'imgix',
-    path: 'https://sherpaswap.metabest.tech/',
+    path: 'https://fluidex.metabest.tech/',
   },
   async rewrites() {
     return [

@@ -36,7 +36,7 @@ const config = ({ t }: FAQsType) => [
   },
   {
     title: t('Where do the fees go?'),
-    description: [t('100% of YAK spent on Pancake Squad NFTs will be burned as part of our weekly YAK burn.')],
+    description: [t('100% of FLUIDEX spent on Pancake Squad NFTs will be burned as part of our weekly FLUIDEX burn.')],
   },
   {
     title: t('How are the NFTs randomly distributed?'),

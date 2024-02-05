@@ -104,7 +104,7 @@ const NextDrawCard = () => {
             fontSize="14px"
             color="textSubtle"
             textAlign={['center', null, null, 'left']}
-            unit=" YAK"
+            unit=" FLUIDEX"
             value={getBalanceNumber(amountCollectedInCake)}
             decimals={0}
           />

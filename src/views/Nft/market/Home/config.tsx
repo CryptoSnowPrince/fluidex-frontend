@@ -9,7 +9,7 @@ const config = (t: ContextApi['t']) => {
         t(
           'Trades are settled in WBNB, which is a wrapped version of SEI used on SEI Smart Chain. That means that when you sell an item, WBNB is sent to your wallet instead of SEI.',
         ),
-        t('You can instantly swap your WBNB for SEI with no trading fees on Sherpaswap.'),
+        t('You can instantly swap your WBNB for SEI with no trading fees on Fluidex.'),
       ],
     },
     {
@@ -26,10 +26,10 @@ const config = (t: ContextApi['t']) => {
       title: t('What are the fees?'),
       description: [
         t(
-          '100% of all platform fees taken by Sherpaswap from sales are used to buy back and BURN YAK tokens in our weekly YAK burns.',
+          '100% of all platform fees taken by Fluidex from sales are used to buy back and BURN FLUIDEX tokens in our weekly FLUIDEX burns.',
         ),
         t(
-          'Platform fees: 2% is subtracted from NFT sales on the market. Subject to change.Collection fees: Additional fees may be taken by collection creators, once those collections are live. These will not contribute to the YAK burns.',
+          'Platform fees: 2% is subtracted from NFT sales on the market. Subject to change.Collection fees: Additional fees may be taken by collection creators, once those collections are live. These will not contribute to the FLUIDEX burns.',
         ),
       ],
     },

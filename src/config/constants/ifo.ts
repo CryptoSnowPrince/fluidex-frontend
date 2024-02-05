@@ -1,9 +1,9 @@
 import { Token, ChainId } from '@pancakeswap/sdk'
 import { bscTokens } from './tokens'
-import { YAK_BNB_LP_MAINNET } from './farms'
+import { FLUIDEX_BNB_LP_MAINNET } from './farms'
 import { Ifo } from './types'
 
-export const cakeBnbLpToken = new Token(ChainId.BSC, YAK_BNB_LP_MAINNET, 18, 'YAK-SEI LP')
+export const cakeBnbLpToken = new Token(ChainId.BSC, FLUIDEX_BNB_LP_MAINNET, 18, 'FLUIDEX-SEI LP')
 
 const ifos: Ifo[] = [
   {

@@ -1,20 +1,20 @@
 import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
 
-const YAK_MAINNET = new Token(
+const FLUIDEX_MAINNET = new Token(
   ChainId.BSC,
-  '0x1FC855B99e97FE958c40dbF9876961Eb80F78091',
+  '0x67056f04e0B41C8350dbBb848A4909E2aF49D2f0',
   18,
-  'YAK',
-  'YAK',
+  'FLUIDEX',
+  'FLUIDEX',
   'https://seitrace.com/',
 )
 
-const YAK_TESTNET = new Token(
+const FLUIDEX_TESTNET = new Token(
   ChainId.BSC_TESTNET,
   '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
   18,
-  'YAK',
-  'Sherpaswap Token',
+  'FLUIDEX',
+  'Fluidex Token',
   'https://pancakeswap.finance/',
 )
 
@@ -41,9 +41,9 @@ export const USDC = {
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
 }
 
-export const YAK = {
-  [ChainId.BSC]: YAK_MAINNET,
-  [ChainId.BSC_TESTNET]: YAK_TESTNET,
+export const FLUIDEX = {
+  [ChainId.BSC]: FLUIDEX_MAINNET,
+  [ChainId.BSC_TESTNET]: FLUIDEX_TESTNET,
 }
 
 const BUSD_MAINNET = new Token(
@@ -72,8 +72,8 @@ export const BUSD: Record<ChainId, Token> = {
 export const bscTokens = {
   wbnb: WBNB[ChainId.BSC],
   // bnb here points to the wbnb contract. Wherever the currency SEI is required, conditional checks for the symbol 'SEI' can be used
-  bnb: new Token(ChainId.BSC, '0x399FA293e0CD85f4B87809698C921829E730a687', 18, 'SEI', 'SEI', 'https://seitrace.com/'),
-  cake: YAK_MAINNET,
+  bnb: new Token(ChainId.BSC, '0x26841a0A5D958B128209F4ea9a1DD7E61558c330', 18, 'SEI', 'SEI', 'https://seitrace.com/'),
+  cake: FLUIDEX_MAINNET,
   gmi: new Token(ChainId.BSC, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   tlos: new Token(
     ChainId.BSC,
@@ -143,11 +143,10 @@ export const bscTokens = {
   ),
   usdt: new Token(
     ChainId.BSC,
-    '0xf3b23b237dBb5b13606C596bC8a1B83774Db3377',
-    // '0xf3b23b237dbb5b13606c596bc8a1b83774db3377',
+    '0x837C62fBB76F7a72AbA4a68981930189b2D651d4',
     18,
     'USDT',
-    'Tether USD',
+    'Tether USDT',
     'https://tether.to/',
   ),
   btcb: new Token(
@@ -290,7 +289,7 @@ export const bscTokens = {
     ChainId.BSC,
     '0xdB8D30b74bf098aF214e862C90E647bbB1fcC58c',
     18,
-    'BABYYAK',
+    'BABYFLUIDEX',
     'Baby Cake Token',
     'https://babycake.app/',
   ),
@@ -2344,7 +2343,7 @@ export const bscTokens = {
 
 export const bscTestnetTokens = {
   wbnb: WBNB[ChainId.BSC_TESTNET],
-  cake: YAK_TESTNET,
+  cake: FLUIDEX_TESTNET,
   busd: BUSD_TESTNET,
   syrup: new Token(
     ChainId.BSC_TESTNET,

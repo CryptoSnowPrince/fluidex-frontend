@@ -20,14 +20,14 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     attributes: [
       { src: 'SEI', alt: t('SEI token') },
       { src: 'BTC', alt: t('BTC token') },
-      { src: 'YAK', alt: t('YAK token') },
+      { src: 'FLUIDEX', alt: t('FLUIDEX token') },
     ],
   },
 })
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Earn passive income with crypto.'),
-  bodyText: t('Sherpaswap makes it easy to make your crypto work for you.'),
+  bodyText: t('Fluidex makes it easy to make your crypto work for you.'),
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -50,14 +50,14 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('YAK makes our world go round.'),
+  headingText: t('FLUIDEX makes our world go round.'),
   bodyText: t(
-    'YAK token is at the heart of the Sherpaswap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'FLUIDEX token is at the heart of the Fluidex ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   ),
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: t('Buy YAK'),
+    text: t('Buy FLUIDEX'),
     external: false,
   },
   secondaryButton: {
@@ -71,7 +71,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     attributes: [
       { src: 'bottom-right', alt: t('Small 3d pancake') },
       { src: 'top-right', alt: t('Small 3d pancake') },
-      { src: 'coin', alt: t('YAK token') },
+      { src: 'coin', alt: t('FLUIDEX token') },
       { src: 'top-left', alt: t('Small 3d pancake') },
     ],
   },
